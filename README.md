@@ -1,9 +1,9 @@
-# multbroker
+# optimumsupply
 
 
 API-GateWay
 -----------
-URL : http://localhost:8989/payment/26
+URL : http://localhost:8989/pessoa/26
 HTTP Method : GET
 
-# optimumsupply
+
