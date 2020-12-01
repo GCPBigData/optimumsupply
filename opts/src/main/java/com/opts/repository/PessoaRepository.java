@@ -13,10 +13,11 @@ import reactor.core.publisher.Mono;
  */
 
 public interface PessoaRepository extends ReactiveMongoRepository<PessoaDoc, String> {
-    Flux<PessoaDoc> findByNome(String nome);
+
+    Mono<PessoaDoc> findByNome(String nome);
     Mono<PessoaDoc> findByCpf(String cpf);
-    Flux<PessoaDoc> findBySkype(String skype);
-    Flux<PessoaDoc> findByEmail(String email);
+    Mono<PessoaDoc> findBySkype(String skype);
+    Mono<PessoaDoc> findByEmail(String email);
 
     @Query("{'nome':{$regex:?0,$options:'i'}}")
     Flux<PessoaDoc> searchNome(String nome);
@@ -26,4 +27,5 @@ public interface PessoaRepository extends ReactiveMongoRepository<PessoaDoc, Str
             "{'skype':{$regex:?0,$options:'i'}}]}, " +
             "{'email':{$regex:?0,$options:'i'}}]}, ")
     Flux<PessoaDoc> fullSearch(String nome, String cpf, String skype, String email);
+
 }

@@ -11,8 +11,16 @@ import reactor.core.publisher.Mono;
  */
 
 public interface PessoaService {
-    Flux<PessoaDoc> findAll();
+
+    Flux <PessoaDoc> findAll();
+    Flux <PessoaDoc> searchNome(String nome);
+    Flux <PessoaDoc> fullSearch(String nome, String cpf, String skype, String email);
     Mono findById(String id);
+    Mono findByNome(String nome);
+    Mono findByCpf(String cpf);
+    Mono findBySkype(String skype);
+    Mono findByEmail(String nome);
     Mono<PessoaDoc> save(PessoaDoc pessoaDoc);
     Mono<PessoaDoc> update(PessoaDoc pessoaDoc);
+
 }

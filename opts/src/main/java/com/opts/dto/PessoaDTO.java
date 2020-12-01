@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
  */
 
 public class PessoaDTO {
+
     String id;
     String nome;
     String cpf;
@@ -21,4 +22,5 @@ public class PessoaDTO {
     String skype;
     String status;
     LocalDateTime datacadastro = LocalDateTime.now();
+
 }

@@ -22,6 +22,8 @@ public class PessoaServiceImplements implements PessoaService {
     public Flux<PessoaDoc> findAll() {
         return pessoaRepository.findAll();
     }
+    public Flux<PessoaDoc> searchNome(String nome) { return pessoaRepository.searchNome(nome); }
+    public Flux<PessoaDoc> fullSearch(String nome, String cpf, String skype, String email) { return pessoaRepository.fullSearch(nome, cpf, skype, email); }
     public Mono<PessoaDoc> findById(String id) {
         return pessoaRepository.findById(id);
     }
@@ -31,4 +33,9 @@ public class PessoaServiceImplements implements PessoaService {
     public Mono<PessoaDoc> update(PessoaDoc pessoaDoc) {
         return pessoaRepository.save(pessoaDoc);
     }
+    public Mono<PessoaDoc> findByNome(String nome) { return pessoaRepository.findByNome(nome); }
+    public Mono<PessoaDoc> findByEmail(String email) { return pessoaRepository.findByEmail(email); }
+    public Mono<PessoaDoc> findByCpf(String cpf) { return pessoaRepository.findByCpf(cpf); }
+    public Mono<PessoaDoc> findBySkype(String skype) { return pessoaRepository.findBySkype(skype); }
+
 }
