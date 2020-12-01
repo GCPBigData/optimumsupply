@@ -7,7 +7,7 @@ spring:
     console:
       enabled: true
   application:
-    name: opts-service
+    name: opts-mongo-service
 logging:
   file:
     name: /log/opts.log

@@ -5,8 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
-import org.springframework.data.relational.core.mapping.Table;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 
@@ -19,11 +22,15 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("Pessoa")
+@Table(name = "pessoa", schema = "test")
 public class PessoaEnt {
 
+    private static final long serialVersionUID = 1L;
+
     @Id
-    public String id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sq_pessoa")
+    @SequenceGenerator(name = "sq_pessoa", sequenceName = "sq_pessoa", allocationSize = 1)
+    private Long id;
 
     @Column("nome")
     public String nome;
@@ -33,7 +40,7 @@ public class PessoaEnt {
     public String cpf;
 
     @Column("datanascimento")
-    public String datanascimento;
+    public LocalDateTime datanascimento;
 
     @Column("estado")
     public String estado;
