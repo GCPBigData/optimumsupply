@@ -1,5 +1,0 @@
-com/multbroker/ps/api/PaymentServiceApplication.class
-com/multbroker/ps/api/repository/PaymentRepository.class
-com/multbroker/ps/api/entity/Payment.class
-com/multbroker/ps/api/controller/PaymentController.class
-com/multbroker/ps/api/service/PaymentService.class

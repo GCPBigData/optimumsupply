@@ -88,6 +88,18 @@ public class PessoaController {
         return ResponseEntity.ok().body(listDto);
     }
 
+    @RequestMapping(value="/flux20Inativo", method= RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<List<PessoaDTO>> findAllInativos() {
+        Flux<PessoaDoc> listFlux = pessoaService.findAll();
+        List<PessoaDTO> listDto = listFlux.toStream()
+                .sorted(Comparator.comparing(PessoaDoc::getId).reversed())
+                .filter(c -> c.getStatus().equals("Inativo"))
+                .map(PessoaDTO::new)
+                .limit(20)
+                .collect( Collectors.toList());
+        return ResponseEntity.ok().body(listDto);
+    }
 
     @PostMapping(value = "/salvar")
     @ResponseStatus(HttpStatus.CREATED)
@@ -96,7 +108,7 @@ public class PessoaController {
     }
 
     @GetMapping(value = "/status", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Flux<PessoaDoc> streamTecnicoStatus() {
+    public Flux<PessoaDoc> streamPessoaStatus() {
         return pessoaService.findAll().delayElements(Duration.ofSeconds(1));
     }
 }
