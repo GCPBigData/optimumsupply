@@ -4,15 +4,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: order-service
-          uri: lb://ORDER-SERVICE
-          predicates:
-            - Path=/order/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: order-service
-                fallbackuri: forward:/orderFallBack
+
         - id: payment-service
           uri: lb://PAYMENT-SERVICE
           predicates:
@@ -22,7 +14,16 @@ spring:
               args:
                 name: payment-service
                 fallbackuri: forward:/paymentFallback
-                
+
+        - id: pessoa-service
+          uri: lb://PESSOA-SERVICE
+          predicates:
+            - Path=/pessoa/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: pessoa-service
+                fallbackuri: forward:/pessoaFallback
 
 server:
   port: 8989

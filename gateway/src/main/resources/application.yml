@@ -14,7 +14,16 @@ spring:
               args:
                 name: payment-service
                 fallbackuri: forward:/paymentFallback
-                
+
+        - id: pessoa-service
+          uri: lb://PESSOA-SERVICE
+          predicates:
+            - Path=/pessoa/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: pessoa-service
+                fallbackuri: forward:/pessoaFallback
 
 server:
   port: 8989

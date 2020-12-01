@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Main-Class: br.skynet.SkyNetpplication
+Main-Class: com.opts
 Class-Path: spring-boot-2.3.0.RELEASE.jar mockito-junit-jupiter-3.3.3.ja
  r spring-tx-5.2.6.RELEASE.jar jboss-logging-3.4.1.Final.jar netty-trans
  port-native-epoll-4.1.49.Final-linux-x86_64.jar spring-integration-core

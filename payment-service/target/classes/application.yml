@@ -9,4 +9,4 @@ spring:
   application:
     name: payment-service
 logging:
-  file: C:/Users/Basant.Hota/Desktop/oms.log
+  file: /log/multbroker.log
