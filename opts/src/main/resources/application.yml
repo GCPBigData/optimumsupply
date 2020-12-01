@@ -11,3 +11,4 @@ spring:
 logging:
   file:
     name: /log/opts.log
+

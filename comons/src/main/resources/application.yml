@@ -1,0 +1,19 @@
+# Spring properties
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      uri: mongodb://localhost/test
+
+ r2dbc:
+    url: r2dbc:postgresql://localhost:5432/test
+    username: postgres
+    password: debian23
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG

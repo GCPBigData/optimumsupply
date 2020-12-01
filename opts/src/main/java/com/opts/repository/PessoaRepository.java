@@ -18,6 +18,7 @@ public interface PessoaRepository extends ReactiveMongoRepository<PessoaDoc, Str
     Mono<PessoaDoc> findByCpf(String cpf);
     Mono<PessoaDoc> findBySkype(String skype);
     Mono<PessoaDoc> findByEmail(String email);
+    Flux<PessoaDoc> findByCep(String cep);
 
     @Query("{'nome':{$regex:?0,$options:'i'}}")
     Flux<PessoaDoc> searchNome(String nome);
@@ -26,6 +27,6 @@ public interface PessoaRepository extends ReactiveMongoRepository<PessoaDoc, Str
             "{'cpf':{$regex:?0,$options:'i'}}]}," +
             "{'skype':{$regex:?0,$options:'i'}}]}, " +
             "{'email':{$regex:?0,$options:'i'}}]}, ")
-    Flux<PessoaDoc> fullSearch(String nome, String cpf, String skype, String email);
+    Flux<PessoaDoc> fullSearch(String nome, String cpf, String skype, String email, String cep);
 
 }
