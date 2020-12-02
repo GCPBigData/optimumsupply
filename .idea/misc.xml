@@ -16,11 +16,14 @@
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/payment-service/pom.xml" />
         <option value="$PROJECT_DIR$/opts/pom.xml" />
+        <option value="$PROJECT_DIR$/opts-mongo/pom.xml" />
+        <option value="$PROJECT_DIR$/caed/pom.xml" />
+        <option value="$PROJECT_DIR$/opts-postgres/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ParserProjectConfiguration">
     <class-path />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="14" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

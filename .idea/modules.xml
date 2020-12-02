@@ -8,8 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/optimumsupply.iml" filepath="$PROJECT_DIR$/.idea/optimumsupply.iml" />
-      <module fileurl="file://$PROJECT_DIR$/opts/opts.iml" filepath="$PROJECT_DIR$/opts/opts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/payment-service/payment-service.iml" filepath="$PROJECT_DIR$/payment-service/payment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opts-mongo/opts-mongo.iml" filepath="$PROJECT_DIR$/opts-mongo/opts-mongo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opts-postgres/opts-postgres.iml" filepath="$PROJECT_DIR$/opts-postgres/opts-postgres.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/service-registry.iml" filepath="$PROJECT_DIR$/eureka/service-registry.iml" />
     </modules>
   </component>

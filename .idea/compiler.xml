@@ -17,7 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloud-config-server" target="1.8" />
-      <module name="comons" target="14" />
+      <module name="comons" target="11" />
       <module name="config" target="11" />
       <module name="eureka" target="11" />
       <module name="gateway" target="11" />
