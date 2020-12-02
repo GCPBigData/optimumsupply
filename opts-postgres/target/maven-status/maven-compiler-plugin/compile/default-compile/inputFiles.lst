@@ -1,0 +1,12 @@
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/dto/PessoaDTO.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/exception/CustomAttributes.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/repository/PessoaRepository.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/controller/PessoaController.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/OptsPostgresApplication.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/repository/UserRepository.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/config/SecurityConfig.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/exception/GlobalExceptionHandler.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/service/UserDetailsService.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/service/PessoaService.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/domain/User.java
+/home/junior/dev/@Java/optimumsupply/opts-postgres/src/main/java/br/opts/service/PessoaServiceImplements.java

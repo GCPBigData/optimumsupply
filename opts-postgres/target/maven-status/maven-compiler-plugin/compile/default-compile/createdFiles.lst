@@ -1,0 +1,12 @@
+br/opts/dto/PessoaDTO.class
+br/opts/config/SecurityConfig.class
+br/opts/exception/CustomAttributes.class
+br/opts/repository/PessoaRepository.class
+br/opts/controller/PessoaController.class
+br/opts/domain/User.class
+br/opts/OptsPostgresApplication.class
+br/opts/exception/GlobalExceptionHandler.class
+br/opts/service/UserDetailsService.class
+br/opts/service/PessoaServiceImplements.class
+br/opts/repository/UserRepository.class
+br/opts/service/PessoaService.class
