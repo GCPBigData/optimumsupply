@@ -9,7 +9,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - webflux_data:/var/lib/postgresql/caed
+      - webflux_data:/var/lib/postgresql/test
 
 volumes:
   webflux_data:

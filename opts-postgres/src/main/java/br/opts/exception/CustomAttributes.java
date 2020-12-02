@@ -1,4 +1,4 @@
-package br.caed.exception;
+package br.opts.exception;
 
 import java.util.Map;
 import org.springframework.boot.web.error.ErrorAttributeOptions;

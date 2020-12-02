@@ -1,4 +1,4 @@
-package br.caed.dto;
+package br.opts.dto;
 
 import com.opts.entity.Pessoa;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package br.caed.service;
+package br.opts.service;
 
 import com.opts.entity.Pessoa;
 import reactor.core.publisher.Flux;
@@ -11,7 +11,7 @@ public interface PessoaService {
     Flux<Pessoa> findAll();
     Flux <Pessoa> findByCep(String cep);
     Mono findById(Long id);
-    Mono findByNome(String nome);
+    Flux<Pessoa> findByNome(String nome);
     Mono findByCpf(String cpf);
     Mono findBySkype(String skype);
     Mono findByEmail(String email);
@@ -25,10 +25,7 @@ public interface PessoaService {
         return PessoaRepository.findAll();
     }
 
-    public Mono<Pessoa> findById(long id) {
-        return PessoaRepository.findById(id)
-                .switchIfEmpty(monoResponseStatusNotFoundException());
-    }
+
 
     public Mono<Pessoa> save(Pessoa Pessoa) {
         return PessoaRepository.save(Pessoa);
@@ -51,13 +48,5 @@ public interface PessoaService {
                 .flatMap(PessoaRepository::delete);
     }
 
-    private void throwResponseStatusExceptionWhenEmptyName(Pessoa Pessoa){
-        if(StringUtil.isNullOrEmpty(Pessoa.getNome())){
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Invalid Name");
-        }
-    }
-
-    public <T> Mono<T> monoResponseStatusNotFoundException() {
-        return Mono.error(new ResponseStatusException(HttpStatus.NOT_FOUND, "Pessoa not found"));
-    }*/
+*/
 }

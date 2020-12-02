@@ -1,4 +1,4 @@
-package br.caed.domain;
+package br.opts.domain;
 
 import java.util.Arrays;
 import java.util.Collection;

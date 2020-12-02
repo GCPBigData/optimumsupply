@@ -1,8 +1,8 @@
-package br.caed.controller;
+package br.opts.controller;
 
-import br.caed.dto.PessoaDTO;
-import br.caed.repository.PessoaRepository;
-import br.caed.service.PessoaService;
+import br.opts.dto.PessoaDTO;
+import br.opts.repository.PessoaRepository;
+import br.opts.service.PessoaService;
 import com.opts.entity.Pessoa;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;

@@ -1,6 +1,6 @@
-package br.caed.repository;
+package br.opts.repository;
 
-import br.caed.domain.User;
+import br.opts.domain.User;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import reactor.core.publisher.Mono;
 

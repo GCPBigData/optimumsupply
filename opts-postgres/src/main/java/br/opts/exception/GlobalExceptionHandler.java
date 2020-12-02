@@ -1,4 +1,4 @@
-package br.caed.exception;
+package br.opts.exception;
 
 import static org.springframework.boot.web.error.ErrorAttributeOptions.*;
 

@@ -1,6 +1,6 @@
-package br.caed.service;
+package br.opts.service;
 
-import br.caed.repository.UserRepository;
+import br.opts.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.ReactiveUserDetailsService;
 import org.springframework.security.core.userdetails.UserDetails;
