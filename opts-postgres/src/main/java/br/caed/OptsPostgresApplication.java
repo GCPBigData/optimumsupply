@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import reactor.blockhound.BlockHound;
 
 @SpringBootApplication
-public class CaedApplication {
+public class OptsPostgresApplication {
 
     static {
         BlockHound.install(
@@ -16,7 +16,7 @@ public class CaedApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(CaedApplication.class, args);
+        SpringApplication.run(OptsPostgresApplication.class, args);
     }
 
 }
