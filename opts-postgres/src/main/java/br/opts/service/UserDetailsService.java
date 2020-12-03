@@ -7,6 +7,12 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 02/11/2020
+ */
+
 @RequiredArgsConstructor
 @Service
 public class UserDetailsService implements ReactiveUserDetailsService {

@@ -4,6 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import reactor.blockhound.BlockHound;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 02/11/2020
+ */
+
 @SpringBootApplication
 public class OptsPostgresApplication {
 

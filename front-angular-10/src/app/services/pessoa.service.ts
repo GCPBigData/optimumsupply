@@ -2,12 +2,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-/*const baseUrl = 'http://localhost:8080/api/tutorials';*/
 
 @Injectable({
   providedIn: 'root'
 })
-export class TutorialService {
+export class PessoaService {
 
   public readonly baseUrl = `${environment.baseUrl}`;
 
@@ -37,7 +36,7 @@ export class TutorialService {
     return this.http.delete(this.baseUrl);
   }
 
-  findByTitle(title): Observable<any> {
-    return this.http.get(`${this.baseUrl}?title=${title}`);
+  findByNome(nome): Observable<any> {
+    return this.http.get(`${this.baseUrl}?nome=${nome}`);
   }
 }

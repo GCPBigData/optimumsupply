@@ -7,6 +7,12 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.server.ResponseStatusException;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 02/11/2020
+ */
+
 @Component
 public class CustomAttributes extends DefaultErrorAttributes {
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TutorialService } from 'src/app/services/tutorial.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { PessoaService } from 'src/app/services/pessoa.service';
 
 @Component({
   selector: 'app-tutorial-details',
@@ -12,7 +12,7 @@ export class TutorialDetailsComponent implements OnInit {
   message = '';
 
   constructor(
-    private tutorialService: TutorialService,
+    private tutorialService: PessoaService,
     private route: ActivatedRoute,
     private router: Router) { }
 

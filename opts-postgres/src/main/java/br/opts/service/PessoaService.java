@@ -6,6 +6,12 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 02/11/2020
+ */
+
 public interface PessoaService {
 
     Flux<Pessoa> findAll();
@@ -19,34 +25,4 @@ public interface PessoaService {
     Mono<Pessoa> update(Pessoa pessoa);
     Flux<Pessoa> saveAll(List<Pessoa> pessoas);
 
-   /* private PessoaRepository PessoaRepository;
-
-    public Flux<Pessoa> findAll() {
-        return PessoaRepository.findAll();
-    }
-
-
-
-    public Mono<Pessoa> save(Pessoa Pessoa) {
-        return PessoaRepository.save(Pessoa);
-    }
-
-    @Transactional
-    public Flux<Pessoa> saveAll(List<Pessoa> Pessoas) {
-        return PessoaRepository.saveAll(Pessoas)
-                .doOnNext(this::throwResponseStatusExceptionWhenEmptyName);
-    }
-
-    public Mono<Void> update(Pessoa Pessoa) {
-        return findById(Pessoa.getId())
-                .flatMap(PessoaRepository::save)
-                .then();
-    }
-
-    public Mono<Void> delete(int id) {
-        return findById(id)
-                .flatMap(PessoaRepository::delete);
-    }
-
-*/
 }

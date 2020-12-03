@@ -1,1 +1,61 @@
-<p>pessoa-list works!</p>
+<div class="list row">
+  <div class="col-md-8">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Digite aqui o termo para pesquisa.."
+        [(ngModel)]="nome"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          (click)="searchNome()"
+        >
+          Pesquisar
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h4>Lista de Pessoas</h4>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let pessoa of pessoas; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActivePessoa(pessoa, i)"
+      >
+        {{ pessoa.nome }}
+      </li>
+    </ul>
+
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentPessoa">
+      <h4>Pessoa</h4>
+      <div>
+        <label><strong>Nome:</strong>
+        </label> {{ currentPessoa.nome }}
+      </div>
+      <div>
+        <label><strong>CPF:</strong></label>
+        {{ currentPessoa.cpf }}
+      </div>
+      <div>
+        <label><strong>Status:</strong></label>
+        {{ currentPessoa.published ? "Published" : "Pending" }}
+      </div>
+
+      <a class="badge badge-warning" routerLink="/pessoas/{{ currentPessoa.id }}">
+        Editar
+      </a>
+    </div>
+
+    <div *ngIf="!currentPessoa">
+      <br />
+      <p>...</p>
+    </div>
+  </div>
+</div>
