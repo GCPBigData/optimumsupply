@@ -28,6 +28,7 @@
         (click)="setActivePessoa(pessoa, i)"
       >
         {{ pessoa.nome }}
+
       </li>
     </ul>
 
@@ -44,8 +45,36 @@
         {{ currentPessoa.cpf }}
       </div>
       <div>
+        <label><strong>Data Nascimento:</strong></label>
+        {{ currentPessoa.datanascimento }}
+      </div>
+      <div>
+        <label><strong>Estado:</strong></label>
+        {{ currentPessoa.estado }}
+      </div>
+      <div>
+        <label><strong>Cidade:</strong></label>
+        {{ currentPessoa.cidade }}
+      </div>
+      <div>
+        <label><strong>CEP:</strong></label>
+        {{ currentPessoa.cep }}
+      </div>
+      <div>
+        <label><strong>Telefone:</strong></label>
+        {{ currentPessoa.telefone }}
+      </div>
+      <div>
+        <label><strong>Email:</strong></label>
+        {{ currentPessoa.email }}
+      </div>
+      <div>
+        <label><strong>Skype:</strong></label>
+        {{ currentPessoa.skype }}
+      </div>
+      <div>
         <label><strong>Status:</strong></label>
-        {{ currentPessoa.published ? "Published" : "Pending" }}
+        {{ currentPessoa.status }}
       </div>
 
       <a class="badge badge-warning" routerLink="/pessoas/{{ currentPessoa.id }}">

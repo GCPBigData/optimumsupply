@@ -1,6 +1,7 @@
 export const environment = {
   production: true,
 
-  baseUrl : 'http://localhost:8080/pessoas/v1/'
+  baseUrl : 'http://localhost:9191/pessoa/v1/',
+  baseUrlTodos : 'http://localhost:9191/pessoa/v1/listarTodos'
 
 };

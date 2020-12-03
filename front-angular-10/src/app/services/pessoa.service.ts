@@ -9,11 +9,12 @@ import { environment } from '../../environments/environment';
 export class PessoaService {
 
   public readonly baseUrl = `${environment.baseUrl}`;
+  public readonly baseUrlTodos = `${environment.baseUrlTodos}`;
 
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get(this.baseUrl);
+    return this.http.get(this.baseUrlTodos);
   }
 
   get(id): Observable<any> {
