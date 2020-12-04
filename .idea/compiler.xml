@@ -38,6 +38,7 @@
       <module name="eureka" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="hystrix-dashboard" options="-parameters" />
+      <module name="opts" options="-parameters" />
       <module name="opts-mongo" options="-parameters" />
       <module name="opts-postgres" options="-parameters" />
       <module name="order-service" options="-parameters" />

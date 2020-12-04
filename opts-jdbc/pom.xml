@@ -9,8 +9,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>opts</name>
-	<description>opts</description>
+	<name>opts-jdbc</name>
+	<description>opts-jdbc</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
