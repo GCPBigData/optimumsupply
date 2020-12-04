@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  curso-angular:
+    image: opts
+    build: .
+    ports:
+      - 8081:80

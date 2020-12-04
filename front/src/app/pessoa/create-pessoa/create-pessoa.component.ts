@@ -14,7 +14,7 @@ import { ConsultaCepService } from '../consulta.cep.service';
 import { EstadoBr } from '../estado-br.model';
 import { Cidade } from '../cidade';
 import { FormValidations } from 'app/shared/form-validations';
-
+import { CpfValidator } from '../../shared/cpf.validator';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -86,7 +86,7 @@ export class CreatePessoaComponent implements OnInit {
     this.pessoaForm = this.formBuilder.group({
 
       nome                : [null],
-      cpf: [null,[Validators.required]],
+      cpf: ['', [Validators.required, CpfValidator]],
       datanascimento     : [null],
       estado             : [null],
       cidade             : [null],

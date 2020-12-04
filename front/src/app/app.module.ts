@@ -30,6 +30,11 @@ import { CreatePessoaComponent } from './pessoa/create-pessoa/create-pessoa.comp
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { EditPessoaComponent } from './pessoa/edit-pessoa/edit-pessoa.component';
 
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
+
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -42,7 +47,8 @@ import { EditPessoaComponent } from './pessoa/edit-pessoa/edit-pessoa.component'
     MatInputModule,
     MatButtonModule,
     BrowserModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    NgxMaskModule.forRoot()
   ],
   declarations: [
     AppComponent,
