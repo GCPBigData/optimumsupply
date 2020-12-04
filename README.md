@@ -14,9 +14,10 @@
  -- usuario: admin senha: admin
  
     -- 1,admin,admin,{bcrypt}$2a$10$62G2DfTMpiQasT4WwbDXUuJly3pZYUVRn/qYbQA7PV5yTSkS6SGTe,"ROLE_ADMIN,ROLE_USER"
-    
 
-5 - Front End - Angular 10
+5 - OptsApplication (postgres) : #Java-Postgres-JDBC-SpringBoot
+
+6 - Front End - Angular 9
 
 -------------------------------------------------------------------------------------------------------------------
     
