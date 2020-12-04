@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="opts-postgres" />
         <module name="cloud-config-server" />
+        <module name="opts" />
         <module name="eureka" />
         <module name="comons" />
         <module name="opts-mongo" />
@@ -22,6 +23,7 @@
       <module name="eureka" target="11" />
       <module name="gateway" target="11" />
       <module name="hystrix-dashboard" target="1.8" />
+      <module name="opts" target="11" />
       <module name="opts-mongo" target="11" />
       <module name="opts-postgres" target="11" />
       <module name="order-service" target="1.8" />

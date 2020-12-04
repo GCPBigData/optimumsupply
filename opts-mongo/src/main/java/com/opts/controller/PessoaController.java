@@ -63,7 +63,6 @@ public class PessoaController {
     }
 
     @RequestMapping(value="/buscarNome/{nome}", method= RequestMethod.GET)
-    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<PessoaDTO>> getByNome(@PathVariable String nome) {
         Flux<PessoaDoc> listFlux = pessoaService.findAll();
         List<PessoaDTO> listDto = listFlux.toStream()

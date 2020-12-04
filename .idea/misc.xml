@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/opts-mongo/pom.xml" />
         <option value="$PROJECT_DIR$/caed/pom.xml" />
         <option value="$PROJECT_DIR$/opts-postgres/pom.xml" />
+        <option value="$PROJECT_DIR$/opts-jdbc/pom.xml" />
       </list>
     </option>
   </component>
