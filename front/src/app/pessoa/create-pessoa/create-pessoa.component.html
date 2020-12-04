@@ -1,0 +1,266 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <p class="card-category"></p>
+                <h4 class="card-title">Cadastrar Pessoa</h4>
+             </div>
+            <div class="card-body">
+                <form class="form-group" [formGroup]="pessoaForm">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group" class="example-full-width">
+                                <label for="nome">Nome</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="nome"
+                                       formControlName="nome"
+                                       [(ngModel)]="request.nome"
+                                       name="nome">
+                            </div>
+                        </div><form class="form-group" [formGroup]="pessoaForm">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group" class="example-full-width">
+                                        <label for="nome">Nome</label>
+                                        <input type="text"
+                                               class="form-control"
+                                               id="nome"
+                                               formControlName="nome"
+                                               [(ngModel)]="request.nome"
+                                               name="nome">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group" class="example-full-width">
+                                        <label for="cpf">CPF</label>
+                                        <input type="text"
+                                               class="form-control"
+                                               id="cpf"
+                                               pattern=".{10,11}[0-9]+$" 
+                                               maxlength="11"
+                                               formControlName="cpf"
+                                               [(ngModel)]="request.cpf"
+                                               name="cpf"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group" class="example-full-width">
+                                        <label for="datanascimento">Data Nascimento</label>
+                                                <div class="row">
+                                                  <div class="col-xs-12 col-12 col-md-4 form-group">
+                                                    <input data-format="dd/MM/yyyy hh:mm:ss" type="text"
+                                                          id="datanascimento"
+                                                          formControlName="datanascimento"
+                                                          [(ngModel)]="request.datanascimento"
+                                                          name="datanascimento"
+                                                          class="form-control"
+                                                          placeholder="yyyy-mm-dd hh:mm:ss"
+                                                          bsDatepicker>
+        
+                                                          
+                                                  </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+         <!--linha 2-->
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="form-group" class="example-full-width">
+                                        <label for="cep">CEP</label>
+                                        <input type="text" class="form-control"
+                                               id="cep"
+                                               formControlName="cep"
+                                               [(ngModel)]="request.cep"
+                                               name="cep"></div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group" class="example-full-width">
+                                        <label for="estado">Estado</label>
+                                        <input type="text" class="form-control"
+                                               id="estado"
+                                               formControlName="estado"
+                                               [(ngModel)]="request.estado"
+                                               name="estado">
+                                    </div>
+        
+                                  <!--  <div class="col-md-3">
+                                        <label for="estado" class="control-label">Estado</label>
+                                        <select class="form-control" id="estado" formControlName="estado">
+                                          <option *ngFor="let estado of estados" [value]="estado.sigla">
+                                              {{ request.nome }}</option>
+                                        </select>
+                                      </div>-->
+        
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group" class="example-full-width">
+                                        <label for="cidade">Cidade</label>
+                                        <input type="text" class="form-control"
+                                               id="cidade"
+                                               formControlName="cidade"
+                                               [(ngModel)]="request.cidade"
+                                               name="cidade"></div>
+                                </div>
+                              
+                            </div>
+                            <!--linha 2-->
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group" class="example-full-width">
+                                        <label for="telefone">Telefone</label>
+                                        <input type="text" class="form-control"
+                                               id="telefone"
+                                               formControlName="telefone"
+                                               [(ngModel)]="request.telefone"
+                                               name="telefone">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group" class="example-full-width">
+                                        <label for="email">Email</label>
+                                        <input type="text" class="form-control"
+                                               id="email"
+                                               formControlName="email"
+                                               [(ngModel)]="request.email"
+                                               name="email"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group" class="example-full-width">
+                                        <label for="skype">Skype</label>
+                                        <input type="text" class="form-control"
+                                               id="skype"
+                                               formControlName="skype"
+                                               [(ngModel)]="request.skype"
+                                               name="skype"></div>
+                                </div>
+                            </div>
+                            <!--botao-->
+                            <div class="dropdown show-dropdown">
+                                <button data-toggle="dropdown"
+                                        aria-expanded="true"
+                                        (click)="save()"
+                                        class="btn btn-danger pull-right">Salvar
+                                </button>
+                            </div>
+                            <!--botao-->
+                        </form>
+                        <div class="col-md-3">
+                            <div class="form-group" class="example-full-width">
+                                <label for="cpf">CPF</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="cpf"
+                                       pattern=".{10,11}[0-9]+$" 
+                                       maxlength="11"
+                                       formControlName="cpf"
+                                       [(ngModel)]="request.cpf"
+                                       name="cpf"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group" class="example-full-width">
+                                <label for="datanascimento">Data Nascimento</label>
+                                        <div class="row">
+                                          <div class="col-xs-12 col-12 col-md-4 form-group">
+                                            <input data-format="dd/MM/yyyy hh:mm:ss" type="text"
+                                                  id="datanascimento"
+                                                  formControlName="datanascimento"
+                                                  [(ngModel)]="request.datanascimento"
+                                                  name="datanascimento"
+                                                  class="form-control"
+                                                  placeholder="yyyy-mm-dd hh:mm:ss"
+                                                  bsDatepicker>
+
+                                                  
+                                          </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+ <!--linha 2-->
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group" class="example-full-width">
+                                <label for="cep">CEP</label>
+                                <input type="text" class="form-control"
+                                       id="cep"
+                                       formControlName="cep"
+                                       [(ngModel)]="request.cep"
+                                       name="cep"></div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group" class="example-full-width">
+                                <label for="estado">Estado</label>
+                                <input type="text" class="form-control"
+                                       id="estado"
+                                       formControlName="estado"
+                                       [(ngModel)]="request.estado"
+                                       name="estado">
+                            </div>
+
+                          <!--  <div class="col-md-3">
+                                <label for="estado" class="control-label">Estado</label>
+                                <select class="form-control" id="estado" formControlName="estado">
+                                  <option *ngFor="let estado of estados" [value]="estado.sigla">
+                                      {{ request.nome }}</option>
+                                </select>
+                              </div>-->
+
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group" class="example-full-width">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" class="form-control"
+                                       id="cidade"
+                                       formControlName="cidade"
+                                       [(ngModel)]="request.cidade"
+                                       name="cidade"></div>
+                        </div>
+                      
+                    </div>
+                    <!--linha 2-->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group" class="example-full-width">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" class="form-control"
+                                       id="telefone"
+                                       formControlName="telefone"
+                                       [(ngModel)]="request.telefone"
+                                       name="telefone">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group" class="example-full-width">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control"
+                                       id="email"
+                                       formControlName="email"
+                                       [(ngModel)]="request.email"
+                                       name="email"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group" class="example-full-width">
+                                <label for="skype">Skype</label>
+                                <input type="text" class="form-control"
+                                       id="skype"
+                                       formControlName="skype"
+                                       [(ngModel)]="request.skype"
+                                       name="skype"></div>
+                        </div>
+                    </div>
+                    <!--botao-->
+                    <div class="dropdown show-dropdown">
+                        <button data-toggle="dropdown"
+                                aria-expanded="true"
+                                (click)="save()"
+                                class="btn btn-danger pull-right">Salvar
+                        </button>
+                    </div>
+                    <!--botao-->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
