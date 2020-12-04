@@ -2,6 +2,12 @@ package com.opts.exception;
 
 import java.util.Date;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 02/11/2020
+ */
+
 public class ErrorDetails {
 	private Date timestamp;
 	private String message;

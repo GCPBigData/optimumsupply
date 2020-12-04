@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="opts-postgres" />
+        <module name="opts-jdbc" />
         <module name="cloud-config-server" />
-        <module name="opts" />
         <module name="eureka" />
         <module name="comons" />
         <module name="opts-mongo" />
@@ -23,7 +23,7 @@
       <module name="eureka" target="11" />
       <module name="gateway" target="11" />
       <module name="hystrix-dashboard" target="1.8" />
-      <module name="opts" target="11" />
+      <module name="opts-jdbc" target="11" />
       <module name="opts-mongo" target="11" />
       <module name="opts-postgres" target="11" />
       <module name="order-service" target="1.8" />
@@ -38,7 +38,7 @@
       <module name="eureka" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="hystrix-dashboard" options="-parameters" />
-      <module name="opts" options="-parameters" />
+      <module name="opts-jdbc" options="-parameters" />
       <module name="opts-mongo" options="-parameters" />
       <module name="opts-postgres" options="-parameters" />
       <module name="order-service" options="-parameters" />

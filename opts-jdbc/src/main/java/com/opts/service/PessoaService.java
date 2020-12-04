@@ -5,6 +5,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 02/11/2020
+ */
+
 @Service
 public interface PessoaService {
     List<Pessoa> findAll();

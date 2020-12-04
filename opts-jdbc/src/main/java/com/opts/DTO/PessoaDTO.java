@@ -9,6 +9,12 @@ import lombok.ToString;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+/**
+ * @author Jose R F Junior
+ * web2ajax@gmail.com
+ * Santiago Chile 02/11/2020
+ */
+
 @AllArgsConstructor
 @ToString(exclude="id")
 @EqualsAndHashCode
